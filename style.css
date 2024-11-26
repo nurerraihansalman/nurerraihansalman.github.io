@@ -1,0 +1,78 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and text color */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Main container for layout (2 by 4 grid) */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 18%; /* Increased the margin to 18% on both sides for more space */
+    padding: 50px 0; /* Keep vertical padding for spacing */
+}
+
+/* Left side (text and about me) */
+.left-side {
+    width: 48%; /* About 50% width of the page */
+    padding-right: 15px; /* Slight space on the right */
+}
+
+.left-side h1 {
+    font-size: 28px; /* Reduced font size */
+    text-align: center; /* Centered the name */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.left-side p {
+    font-size: 14px; /* Reduced font size for paragraphs */
+    line-height: 1.6; /* Slightly reduced line height for text */
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.social-links {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-links a {
+    margin-right: 25px;
+    font-size: 14px; /* Smaller font size for links */
+    text-decoration: none;
+    color: #0077b5; /* LinkedIn color */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #005582;
+}
+
+/* Right side (image) */
+.right-side {
+    width: 48%; /* About 50% width for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Added space above the image */
+}
+
+.right-side img {
+    width: 260px; /* Slightly reduced image size */
+    height: 260px;
+    border-radius: 50%; /* Round image */
+    object-fit: cover; /* Ensures the image fits in the circle */
+    border: none; /* No border around the image */
+    margin-left: 5px; /* Reduced the space between text and image */
+}
+
