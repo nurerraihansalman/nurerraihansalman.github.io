@@ -43,11 +43,19 @@ body {
   margin-right: 10px;
 }
 
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
 .profile img {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  object-fit: cover;
 }
 
 .content {
